@@ -20,7 +20,7 @@
 		E023AC9A16F1122400184E23 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E023AC9916F1122400184E23 /* DetailViewController.m */; };
 		E023AC9D16F1122400184E23 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E023AC9B16F1122400184E23 /* MasterViewController.xib */; };
 		E023ACA016F1122400184E23 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E023AC9E16F1122400184E23 /* DetailViewController.xib */; };
-		E09E312F16F22CA700614D46 /* DrinkDirections.plist in Resources */ = {isa = PBXBuildFile; fileRef = E09E312E16F22CA700614D46 /* DrinkDirections.plist */; };
+		E09E313216F234E500614D46 /* DrinkDirections.plist in Resources */ = {isa = PBXBuildFile; fileRef = E09E313116F234E500614D46 /* DrinkDirections.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,8 +43,8 @@
 		E023AC9916F1122400184E23 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		E023AC9C16F1122400184E23 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController.xib; sourceTree = "<group>"; };
 		E023AC9F16F1122400184E23 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
-		E09E312E16F22CA700614D46 /* DrinkDirections.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = DrinkDirections.plist; path = "../../../../Downloads/Chapter_4/app/DrinkMixer-part3/DrinkDirections.plist"; sourceTree = "<group>"; };
 		E09E313016F22D2200614D46 /* DrinkConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinkConstants.h; sourceTree = "<group>"; };
+		E09E313116F234E500614D46 /* DrinkDirections.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DrinkDirections.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +108,7 @@
 		E023AC8416F1122400184E23 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E09E312E16F22CA700614D46 /* DrinkDirections.plist */,
+				E09E313116F234E500614D46 /* DrinkDirections.plist */,
 				E023AC8516F1122400184E23 /* Drink Mixer-Info.plist */,
 				E023AC8616F1122400184E23 /* InfoPlist.strings */,
 				E023AC8916F1122400184E23 /* main.m */,
@@ -177,7 +177,7 @@
 				E023AC9416F1122400184E23 /* Default-568h@2x.png in Resources */,
 				E023AC9D16F1122400184E23 /* MasterViewController.xib in Resources */,
 				E023ACA016F1122400184E23 /* DetailViewController.xib in Resources */,
-				E09E312F16F22CA700614D46 /* DrinkDirections.plist in Resources */,
+				E09E313216F234E500614D46 /* DrinkDirections.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
