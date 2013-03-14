@@ -7,39 +7,32 @@
 //
 
 #import "DetailViewController.h"
+#import "DrinkConstants.h"
 
 @interface DetailViewController ()
-- (void)configureView;
+
 @end
 
 @implementation DetailViewController
+@synthesize nameTextField;
+@synthesize ingredientsTextView;
+@synthesize directionsTextView;
+@synthesize drink;
 
 #pragma mark - Managing the detail item
 
 - (void)setDetailItem:(id)newDetailItem
 {
-    if (_detailItem != newDetailItem) {
-        _detailItem = newDetailItem;
-        
-        // Update the view.
-        [self configureView];
-    }
+   
 }
 
-- (void)configureView
-{
-    // Update the user interface for the detail item.
 
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
-    }
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    [self configureView];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,6 +48,13 @@
         self.title = NSLocalizedString(@"Detail", @"Detail");
     }
     return self;
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.nameTextField.text=[self.drink objectForKey:NAME_KEY];
+    self.ingredientsTextView.text=[self.drink objectForKey:INGREDIENTS_KEY];
+    self.directionsTextView.text=[self.drink objectForKey:DIRECTIONS_KEY];
 }
 							
 @end

@@ -8,9 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : UIViewController{
+    @private
+    UITextField *nameTextField;
+    UITextView *ingredientsTextView;
+    UITextView *directionsTextView;
+    NSDictionary *drink;
+}
+@property(nonatomic,retain) IBOutlet UITextField *nameTextField;
+@property(nonatomic,retain) IBOutlet UITextView *ingredientsTextView;
+@property(nonatomic,retain) IBOutlet UITextView *directionsTextView;
+@property(nonatomic,retain) NSDictionary *drink;
 
-@property (strong, nonatomic) id detailItem;
-
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @end
