@@ -21,6 +21,7 @@
 		E023AC9D16F1122400184E23 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E023AC9B16F1122400184E23 /* MasterViewController.xib */; };
 		E023ACA016F1122400184E23 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E023AC9E16F1122400184E23 /* DetailViewController.xib */; };
 		E09E313216F234E500614D46 /* DrinkDirections.plist in Resources */ = {isa = PBXBuildFile; fileRef = E09E313116F234E500614D46 /* DrinkDirections.plist */; };
+		E0AE2EA117161E3C00C10A7D /* AddDrinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AE2EA017161E3C00C10A7D /* AddDrinkViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,8 @@
 		E023AC9F16F1122400184E23 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
 		E09E313016F22D2200614D46 /* DrinkConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinkConstants.h; sourceTree = "<group>"; };
 		E09E313116F234E500614D46 /* DrinkDirections.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DrinkDirections.plist; sourceTree = "<group>"; };
+		E0AE2E9F17161E3C00C10A7D /* AddDrinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddDrinkViewController.h; sourceTree = "<group>"; };
+		E0AE2EA017161E3C00C10A7D /* AddDrinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddDrinkViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 				E023AC9B16F1122400184E23 /* MasterViewController.xib */,
 				E023AC9E16F1122400184E23 /* DetailViewController.xib */,
 				E023AC8416F1122400184E23 /* Supporting Files */,
+				E0AE2E9F17161E3C00C10A7D /* AddDrinkViewController.h */,
+				E0AE2EA017161E3C00C10A7D /* AddDrinkViewController.m */,
 			);
 			path = "Drink Mixer";
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 				E023AC8E16F1122400184E23 /* AppDelegate.m in Sources */,
 				E023AC9716F1122400184E23 /* MasterViewController.m in Sources */,
 				E023AC9A16F1122400184E23 /* DetailViewController.m in Sources */,
+				E0AE2EA117161E3C00C10A7D /* AddDrinkViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

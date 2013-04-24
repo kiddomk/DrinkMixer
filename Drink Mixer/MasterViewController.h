@@ -12,8 +12,12 @@
 
 @interface MasterViewController : UITableViewController{
     NSMutableArray *drinks;
+    UIBarButtonItem *addButton;
 }
 @property (nonatomic, retain) NSMutableArray *drinks;
 @property (strong, nonatomic) DetailViewController *detailViewController;
+@property(nonatomic,retain)IBOutlet UIBarButtonItem *addButton;
+-(IBAction)addButtonPressed:(id)sender;
+
 
 @end

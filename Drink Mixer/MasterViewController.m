@@ -10,11 +10,13 @@
 
 #import "DetailViewController.h"
 #import "DrinkConstants.h"
+#import "AddDrinkViewController.h"
 
 @interface MasterViewController () @end
 
 @implementation MasterViewController
 @synthesize drinks;
+@synthesize addButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,7 +35,7 @@
     
     NSString *path=[[NSBundle mainBundle]pathForResource:@"DrinkDirections" ofType:@"plist"];
     drinks = [[NSMutableArray alloc] initWithContentsOfFile:path];
-    
+    self.navigationItem.rightBarButtonItem=self.addButton;
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,7 +44,13 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+-(IBAction)addButtonPressed:(id)sender{
+    NSLog(@"Addbutton clicked");
+    AddDrinkViewController *addViewController=[[AddDrinkViewController alloc]initWithNibName:@"DetailViewController" bundle:nil];
+    
+    UINavigationController  *addNavCOntroller =[[UINavigationController alloc] initWithRootViewController:addViewController];
+[self presentModalViewController:addNavCOntroller animated:YES];
+}
 
 #pragma mark - Table View
 

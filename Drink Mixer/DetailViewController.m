@@ -18,6 +18,7 @@
 @synthesize ingredientsTextView;
 @synthesize directionsTextView;
 @synthesize drink;
+@synthesize scrollView;
 
 #pragma mark - Managing the detail item
 
@@ -32,7 +33,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-
+    self.scrollView.contentSize=self.view.frame.size;
 }
 
 - (void)didReceiveMemoryWarning
